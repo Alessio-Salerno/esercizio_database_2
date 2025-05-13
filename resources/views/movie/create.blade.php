@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-8">
 
-    <form method="post" action="{{ route('movie.submit') }}">
+    <form method="post" action="{{ route('movie.submit') }}" enctype="multipart/form-data">
         <!-- TOKEN csrf -->
        @csrf
 
@@ -22,6 +22,12 @@
             <input type="text" name="director" class="form-control" id="director" aria-describedby="directorHelp">
         </div>
     
+
+        
+        <div class="mb-3">
+            <label for="img" class="form-label">Inserisci una locandina</label>
+            <input type="file" name="img" class="form-control" id="img" aria-describedby="imgHelp">
+        </div>
 
 
         <div class="mb-3">

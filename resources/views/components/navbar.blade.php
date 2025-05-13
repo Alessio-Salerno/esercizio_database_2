@@ -29,6 +29,7 @@ I nostri servizi
 </a>
 <ul class="dropdown-menu">
 <li><a class="dropdown-item" href="{{ route('movie.list') }}">I nostri film</a></li>
+<li><a class="dropdown-item" href="{{ route('movie.create') }}">Inserisci il film</a></li>
 </ul>
 </li>
 

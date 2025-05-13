@@ -44,7 +44,8 @@ public function store(Request $request){
         'title' => $request->title,
         'director' => $request->director,
         'year' => $request->year,
-        'plot' => $request->plot
+        'plot' => $request->plot,
+        'img'  =>$request->file('img')->store('public/images')  
     ]);
     
     

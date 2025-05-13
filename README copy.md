@@ -12,7 +12,4 @@
 # Storage è
 - La memoria adibita a contenere i media del nostro progetto.
 
--Storage Locale o Esterno
-
-
 
