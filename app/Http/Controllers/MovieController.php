@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MovieRequest;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -39,7 +40,7 @@ class MovieController extends Controller
         return view('movie.create');
     }
 
-public function store(Request $request){
+public function store(MovieRequest $request){
     $movie = Movie::create([
         'title' => $request->title,
         'director' => $request->director,
